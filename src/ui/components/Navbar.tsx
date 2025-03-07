@@ -35,7 +35,7 @@ export const Navbar = () => {
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
-                        <span className="navbar-text m-1">
+                        <span className="navbar-text m-1" aria-label="userName">
                             {userName}
                         </span>
                         <button className="btn btn-outline-light" type="button" onClick={onLogout}>Logout</button>
