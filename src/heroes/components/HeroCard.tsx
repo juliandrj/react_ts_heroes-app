@@ -11,7 +11,7 @@ export const HeroCard = ({hero}:HeroCardProps) => {
                     </div>
                     <div className="col-8">
                         <div className="card-body">
-                            <h5 className="card-title">{hero.superhero}</h5>
+                            <h5 className="card-title" aria-label="hero-name">{hero.superhero}</h5>
                             <h6 className="card-subtitle mb-2 text-body-secondary">{hero.alter_ego}</h6>
                             {hero.alter_ego === hero.characters ? '' : <p className="card-text">{hero.characters}</p>}
                             <p className="card-text">{hero.first_appearance}</p>

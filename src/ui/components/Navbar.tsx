@@ -38,7 +38,7 @@ export const Navbar = () => {
                         <span className="navbar-text m-1" aria-label="userName">
                             {userName}
                         </span>
-                        <button className="btn btn-outline-light" type="button" onClick={onLogout}>Logout</button>
+                        <button aria-label="btn-logout" className="btn btn-outline-light" type="button" onClick={onLogout}>Logout</button>
                     </form>
                 </div>
             </div>

@@ -27,7 +27,7 @@ export const SearchPage = () => {
         <div className="container">
             <h1>Search Page</h1>
             <hr />
-            <form onSubmit={onSearchSubmit} autoComplete="off">
+            <form onSubmit={onSearchSubmit} autoComplete="off" aria-label="search-form">
                 <div className="input-group mb-3">
                     <input type="text" className="form-control" name="searchText" placeholder="search..." aria-label="search" value={formState.searchText} onChange={onInputChange} />
                     <button className="btn btn-outline-secondary" type="submit" >Search</button>
@@ -35,7 +35,7 @@ export const SearchPage = () => {
             </form>
             {
                 heroes.length === 0 ?
-                    <div className={`alert alert-${data.searchText.trim().length > 0 ? 'danger' : 'primary'} animate__animated animate__fadeInUp`} role="alert">
+                    <div className={`alert alert-${data.searchText.trim().length > 0 ? 'danger' : 'primary'} animate__animated animate__fadeInUp`} role="alert" aria-label="search-alert">
                         {data.searchText.trim().length > 0 ? `Heroes not found (${q})` : 'Search a hero...'}
                     </div>
                     :<>
